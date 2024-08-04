@@ -1,38 +1,101 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin-top: 40px;
+  background-color:#efe5dc;
+  min-width: 800px;
+  min-height: 500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#btn{
+  background-color: #84d2f6;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: large;
+  font-weight: bolder;
+  opacity: 0.7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#btn:hover{
+opacity: 1;
+}
+
+textarea {
+  font-size: large;
+  width: 80%; 
+  height: 200px; 
+  max-width: 600px; 
+  resize: both; 
+}
+
+select{
+  width:120px;
+  height:30px;
+}
+
+#slider{
+  width:100px;
+  height:10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+@media (max-width:1200px) {
+  .App{
+    min-width: 500px;
+    max-height: 400px;
   }
-  to {
-    transform: rotate(360deg);
+
+  textarea{
+    width: 60%;
+  }
+}
+
+@media (min-width:1200px) {
+  .App{
+    min-width: 700px;
+    max-height: 400px;
+  }
+
+  textarea{
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    min-width: 100%;
+    min-height: 80%;
+    padding: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+  }
+
+  #btn {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: medium;
+  }
+
+  select {
+    width: 100%;
+    height: 30px;
+  }
+
+  #slider {
+    width: 100%;
   }
 }
